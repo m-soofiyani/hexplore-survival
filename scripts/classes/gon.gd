@@ -6,7 +6,7 @@ class_name Gon
 var RestPosition
 var HiddenPosition : Vector3 = Vector3.ZERO
 var tween : Tween
-var TravelSpeed : float = .3
+var TravelSpeed : float = .05
 
 func _ready() -> void:
 	RestPosition = position
