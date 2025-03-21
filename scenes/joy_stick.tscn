@@ -1,0 +1,15 @@
+[gd_scene load_steps=4 format=3 uid="uid://b34r1b075j0ua"]
+
+[ext_resource type="Texture2D" uid="uid://l6vxk50bd0i0" path="res://sprites/joystick_circle_frame.png" id="1_hals1"]
+[ext_resource type="Script" uid="uid://da7v4lrefl3q8" path="res://scripts/classes/joystick.gd" id="1_yad8u"]
+[ext_resource type="Texture2D" uid="uid://sbphh0sw7nyl" path="res://sprites/joystick_circle.png" id="2_v3bvn"]
+
+[node name="JoyStick" type="Node2D"]
+script = ExtResource("1_yad8u")
+
+[node name="JoystickCircleFrame" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0.415686)
+texture = ExtResource("1_hals1")
+
+[node name="JoystickCircle" type="Sprite2D" parent="JoystickCircleFrame"]
+texture = ExtResource("2_v3bvn")

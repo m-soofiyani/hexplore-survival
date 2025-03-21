@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://cv7ll3s3c0lgi"]
+
+[ext_resource type="Script" uid="uid://cixi3qeqvrh3a" path="res://scripts/classes/world.gd" id="1_ly1k3"]
+[ext_resource type="PackedScene" uid="uid://qqlg83u6drfb" path="res://scenes/character.tscn" id="2_32lhk"]
+
+[node name="World" type="Node3D"]
+script = ExtResource("1_ly1k3")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.860538, 0.509387, 0, -0.509387, 0.860538, 0, 1.62659, 2.1565)
+
+[node name="Origin" parent="." instance=ExtResource("2_32lhk")]
+transform = Transform3D(1, 0, 0, 0, 0.866025, -0.5, 0, 0.5, 0.866025, 0, 0, 0)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.852321, 0.411408, 0.322944, -0.475825, 0.353618, 0.805323, 0.217117, -0.840058, 0.497154, 0, 0, 0)
+light_bake_mode = 1
+shadow_blur = 2.765
